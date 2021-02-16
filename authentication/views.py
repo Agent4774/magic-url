@@ -12,7 +12,7 @@ def login(request):
 		email 			= request.POST.get("emailId")
 		user 			= User.objects.get(email=email)
 		login_token 	= get_query_string(user)
-		login_link 		= f"http://localhost:8000/confirmation/{login_token}"		
+		login_link 		= f"https://magic-url-project.herokuapp.com/confirmation/{login_token}"		
 		html_message 	= f"""<p>Hi there,</p><p>Here is your <a href="{login_link}">magic link</a></p><p>Thanks,</p><p>Django Admin</p>"""
 
 		send_mail(
