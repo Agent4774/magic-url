@@ -1,0 +1,9 @@
+{% extends 'authentication/main.html' %}
+
+{% block title %}
+{% endblock title %}
+
+{% block main %}
+	<p>{{ visits }}</p>
+	<p><a href="{% url 'home' %}">Back to home page</a></p>
+{% endblock main %}

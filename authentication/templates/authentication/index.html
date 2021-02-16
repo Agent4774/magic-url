@@ -1,0 +1,9 @@
+{% extends 'authentication/main.html' %}
+
+{% block title %}
+{% endblock title %}
+
+{% block main %}
+	<h2>{{ greeting }}</h2>
+  <p>Please, <a href="{% url 'visits' %}">click here</a> to check the number of visits.</p>
+{% endblock main %}
