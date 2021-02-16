@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'x-u##3)0c$6np3j-dvs95+@0n#k8h@&1gto!rwfp$q%%nl58l9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://magic-url-project.herokuapp.com/', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -141,5 +141,5 @@ SESAME_TOKEN_NAME = "token"
 # sets token expiry
 SESAME_MAX_AGE = 6 * 60 * 60 # 6 hour
 
-#activate django_heroku
+# Activate Django-Heroku.
 django_heroku.settings(locals())
