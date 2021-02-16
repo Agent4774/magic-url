@@ -18,7 +18,7 @@ def login(request):
 		send_mail(
 			'Django Magic Link',
 			html_message,
-			'muenze7777@gmail.com',
+			'projectoriented34@yahoo.com',
 			[email],
 			fail_silently=False,
 			html_message=html_message

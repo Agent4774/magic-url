@@ -128,12 +128,12 @@ MIDDLEWARE += ['sesame.middleware.AuthenticationMiddleware']
 AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.ModelBackend', 'sesame.backends.ModelBackend']
 
 # configure with your own smtp server settings
-EMAIL_HOST              = "smtp.gmail.com"
-EMAIL_PORT              = 587
-EMAIL_HOST_USER         = "muenze7777@gmail.com"
-EMAIL_HOST_PASSWORD     = "kovaleff777"
-EMAIL_USE_TLS           = True
-DEFAULT_FROM_EMAIL      = "Admin<muenze7777@gmail.com>" 
+EMAIL_HOST = 'smtp.mail.yahoo.com'
+EMAIL_HOST_USER = 'projectoriented34@yahoo.com'
+EMAIL_HOST_PASSWORD = 'eliepgxshswqlpma'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'Admin<projectoriented34@yahoo.com>'
 
 #customizes auth token name
 SESAME_TOKEN_NAME = "token"
