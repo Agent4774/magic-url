@@ -13,7 +13,7 @@ def login(request):
 	if request.method == "POST":
 		email 			= request.POST.get("emailId")
 		token 			= base64.b64encode(email.encode('utf-8')).decode('utf-8')
-		html_message 	= f"""<p>Hi there,</p><p>Here is your <a href="http://localhost:8000/confirmation/{token}">magic link</a></p><p>Thanks,</p><p>Django Admin</p>"""
+		html_message 	= f"""<p>Hi there,</p><p>Here is your <a href="https://magic-url-project.herokuapp.com/confirmation/{token}">magic link</a></p><p>Thanks,</p><p>Django Admin</p>"""
 
 		send_mail(
 			'Django Magic Link',
