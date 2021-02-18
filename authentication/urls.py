@@ -8,7 +8,7 @@ from .views import (
 
 urlpatterns = [
     path('', login, name='login'),
-    path('confirmation/', confirmation, name='confirmation'),
+    re_path(r'^confirmation/(?P<token>.+)/', confirmation, name='confirmation'),
     path('home/', home, name='home'),
     path('visits/', visits, name='visits'),
 ]
