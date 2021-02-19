@@ -1,19 +1,17 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from django.contrib.auth.models import User
 from django.core.mail import send_mail
 from django.contrib.auth.decorators import login_required
-from django.core.exceptions import PermissionDenied
 from django.http import HttpResponse
 import base64
-from django.contrib.auth import authenticate
 from django.contrib.auth import login as auth_login
 
 
 def login(request):
 	if request.method == "POST":
-		email 			= request.POST.get("emailId")
-		token 			= base64.b64encode(email.encode('utf-8')).decode('utf-8')
-		html_message 	= f"""<p>Hi there,</p><p>Here is your <a href="https://magic-url-project.herokuapp.com/confirmation/{token}">magic link</a></p><p>Thanks,</p><p>Django Admin</p>"""
+		email = request.POST.get("emailId")
+		token = base64.b64encode(email.encode('utf-8')).decode('utf-8')
+		html_message = f"""<p>Hi there,</p><p>Here is your <a href="https://magic-url-project.herokuapp.com/confirmation/{token}">magic link</a></p><p>Thanks,</p><p>Django Admin</p>"""
 
 		send_mail(
 			'Django Magic Link',
