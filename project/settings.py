@@ -131,7 +131,7 @@ AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.ModelBackend', 'sesame.
 # configure with your own smtp server settings
 EMAIL_HOST = 'smtp.mail.yahoo.com'
 EMAIL_HOST_USER = 'projectoriented34@yahoo.com'
-EMAIL_HOST_PASSWORD = 'eliepgxshswqlpma'
+EMAIL_HOST_PASSWORD = 'ujsdidshpufnsqyw'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'Admin<projectoriented34@yahoo.com>'
